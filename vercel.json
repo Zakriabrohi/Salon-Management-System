@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "outputDirectory": ".",
+  "builds": [
+    { "src": "public/index.php", "use": "vercel-php@0.8.0" },
+    { "src": "public/build/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    {
+      "src": "/build/(.*)",
+      "dest": "public/build/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "public/index.php"
+    }
+  ]
+}
