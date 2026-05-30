@@ -5,7 +5,10 @@
     {
       "src": "public/index.php",
       "use": "vercel-php@0.8.0",
-      "config": { "maxExecutionTime": 60, "phpVersion": "8.3" }
+      "config": {
+        "maxExecutionTime": 60,
+        "phpVersion": "8.3"
+      }
     }
   ],
   "routes": [
